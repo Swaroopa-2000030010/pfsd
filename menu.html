@@ -1,0 +1,16 @@
+
+{% extends 'layout.html' %}
+{% block content %}
+<h3>We Provide</h3>
+{% for m in menus %}
+<b><i>Item: {{ m.item }}</i></b>
+<br>
+<b><i>Avalibility: {{ m.avalible }}</i></b>
+<br>
+<b><i>Price: Rs {{ m.price }}/-</i></b>
+<br>
+{% endfor %}
+{% endblock %}
+
+
+

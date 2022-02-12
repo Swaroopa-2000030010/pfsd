@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if title %}
+    <title>FudZone-{{ title }}</title>
+    {% else %}
+    <title>FudZone</title>
+    {% endif %}
+</head>
+<body>
+<center>
+    <h1>
+        Welcome to FudZone
+    </h1>
+    <br>
+    <img src="{{ url_for('static',filename='images.jpg') }}" width="100" height="100" >
+    Menu</img>
+    {% block content %}{% endblock %}
+    <h5>
+        @copyrights reserved S5.
+    </h5>
+</center>
+</body>
+</html>
